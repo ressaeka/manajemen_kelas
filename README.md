@@ -1,30 +1,34 @@
-📚 Perpustakaan
+# 🏫 Manajemen Kelas
 
-**Perpustakaan** adalah aplikasi Python sederhana untuk mengelola koleksi buku. Pengguna dapat menambahkan buku baru, mencari buku berdasarkan judul, serta menampilkan seluruh daftar buku yang tersedia.
+**Manajemen Kelas** adalah aplikasi Python sederhana berbasis CLI (Command Line Interface) yang digunakan untuk mengelola data kelas. Aplikasi ini mendukung operasi CRUD (Create, Read, Update, Delete) serta menggunakan SQLite sebagai basis datanya.
 
 ---
 
-📌 Fitur Utama
+## 📌 Fitur Utama
 
-- ➕ Menambahkan data buku ke dalam koleksi
-- 🔍 Mencari buku berdasarkan judul
-- 📋 Menampilkan semua buku yang tersedia
+- ➕ Tambah data kelas
+- 📋 Lihat daftar kelas
+- ✏️ Edit data kelas
+- 🗑️ Hapus data kelas
+- 🔁 Navigasi menu berbasis terminal
+- 🗂️ Terintegrasi dengan database SQLite
 
+---
 
-📁 Struktur File
+## 📁 Struktur File
 
-| File           | Fungsi                                                   |
-|----------------|----------------------------------------------------------|
-| `main.py`      | Titik masuk aplikasi, tempat menu dijalankan             |
-| `buku.py`      | Modul utama berisi class dan fungsi pengelolaan buku     |
-| `test.py`      | Pengujian fungsi utama secara otomatis (opsional)        |
-| `__init__.py`  | Inisialisasi package Python                              |
+| File              | Fungsi                                                        |
+|-------------------|---------------------------------------------------------------|
+| `main.py`         | Titik masuk program, menampilkan menu utama                  |
+| `kelas.py`        | Logika utama fitur kelas (tambah, lihat, edit, hapus)         |
+| `database.py`     | Koneksi dan operasi terhadap database SQLite (`akademik.db`)  |
+| `akademik.db`     | File database SQLite untuk menyimpan data kelas               |
 
+---
 
+## ▶️ Cara Menjalankan
 
-▶️ Cara Menjalankan
-
-1. Pastikan Python 3.x sudah terpasang di perangkat kamu.
-2. Jalankan program menggunakan perintah berikut:
+1. Pastikan Python 3 sudah terinstal di perangkat kamu.
+2. Jalankan program menggunakan perintah:
    ```bash
    python main.py
